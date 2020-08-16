@@ -279,14 +279,14 @@ a {
 }
 
 .backdrop.is-hidden .modal {
-  transform: translate(-50%, -50%) scale(0.7) rotate(0deg);
+  transform: translate(-50%, -50%) scale(0.7);
 }
 
 .modal {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%) scale(1) rotate(360deg);
+  transform: translate(-50%, -50%) scale(1);
   transition: transform var(--animation);
 
   width: 528px;
@@ -337,8 +337,6 @@ a {
 .form {
   padding: 40px;
   width: 100%;
-
-  outline: 1px solid red;
 }
 
 .form-field {
@@ -469,7 +467,8 @@ a {
 }
 
 .input-checkbox:focus + .icon-checkbox {
-  outline: 1px solid var(--blue);
+  border: 2px solid var(--blue);
+  border-radius: 4px;
 }
 
 .label-checkbox {
@@ -794,6 +793,7 @@ a {
   font-size: 16px;
   line-height: 1.25;
   letter-spacing: 0.03em;
+  padding: 15px 16px;
 
   color: rgba(255, 255, 255, 0.6);
   background-color: transparent;
